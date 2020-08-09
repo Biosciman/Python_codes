@@ -7,7 +7,6 @@ with open('iris.csv', 'r', encoding='UTF-8') as f:
     # np.loadtxt数据读取时默认为float，可改为str；跳过首行：skiprow = 1；读取特定列：usecols参数
     data = np.loadtxt(f, delimiter=',')
 
-
 # 找出原数据中最小值和最大值出现的位置
 dataMaxIndex = np.argmax(data)
 dataMinIndex = np.argmin(data)
