@@ -8,7 +8,6 @@ data1 = np.random.randint(3, 10, 5)
 index = ['a', 'b', 'c', 'd', 'e']
 s1 = pd.Series(data1, index)
 
-
 # 请分别用位置索引和标签索引的方式提取是 s1 的后三个数
 print(s1[-3:])
 print(s1['c':'e'])
