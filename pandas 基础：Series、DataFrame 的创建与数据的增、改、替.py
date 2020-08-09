@@ -13,4 +13,6 @@ print(s1[-3:])
 print(s1['c':'e'])
 
 # 请用字典的形式创建一个DataFrame，将下方表格数据存储进去
-
+data2 = {'year': (2017, 2018, 2019), 'price': (10, 20, 30)}
+DataFrame1 = pd.DataFrame(data2, index=list('012'))
+print(DataFrame1)
