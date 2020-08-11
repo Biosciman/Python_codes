@@ -52,4 +52,3 @@ df_change3 = df_change.fillna(0)
 
 # 删除 df_change中的重复行
 df_change4 = df_change.drop_duplicates()
-
