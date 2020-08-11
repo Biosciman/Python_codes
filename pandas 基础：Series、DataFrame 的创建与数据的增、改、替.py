@@ -39,7 +39,16 @@ df_test.loc['c', 'two'] = -99
 df_test.loc['c', 'three'] = -99
 df_test.loc['a', 'two'] = -100
 df_test['four'] = 'test'
-df_test = df_test.reindex(['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'])
+df_change = df_test.reindex(['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'])
 
 # 删除 df_change 中存在缺失值的所有行
+df_change1 = df_change.dropna()
 
+# 删除 df_change 中所有值都为 NaN 值的行
+df_change2 = df_change.dropna(how='all')
+
+# df_change 中的所有缺失值（即 NaN）以 0 填充
+df_change3 = df_change.fillna(0)
+
+# 删除 df_change中的重复行
+df_change4 = df_change.drop_duplicates()
