@@ -43,4 +43,3 @@ dataCumsum = np.cumsum(dataSort, axis=0)
 
 # 统计花萼长度比平均值 5.84 高的有多少
 Number = (data > 5.84).sum()
-
