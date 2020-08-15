@@ -1,5 +1,4 @@
 import pandas as pd
-import numpy as np
 
 # 利用 pandas 读取 sh.600000.csv 文件中的数据
 csv_data = pd.read_csv('sh.600000.csv')
