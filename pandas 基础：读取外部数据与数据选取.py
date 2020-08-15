@@ -41,5 +41,3 @@ df3 = df1.loc[:, [i for i in df1.columns][index1:index2+1]]
 
 # (7) 使用 df.loc[] 标签定位方式，选取 df1 数据库中时间从 2018-07-01 至 2018-07-08，open 至 close 间的所有列
 df4 = df1.loc['2018-07-01':'2018-07-08', [i for i in df1.columns][index1:index2+1]]
-
-
