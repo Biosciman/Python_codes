@@ -7,6 +7,6 @@ print("Your YiDa!")
 
 # input
 print('Who do you think i am?')
-input()
+input('提示语：\n')
 print('Oh, yes!')
 

@@ -27,5 +27,19 @@ csv_data3 = csv_data[['date', 'open', 'close']]
 print(type(csv_data3))
 
 # (4) 使用 [ ] 标签索引方式，选取收盘价大于 11.08 的所有数据
-csv_data4 = csv_data['close'] > 11.08
-print(csv_data4)
+csv_data4 = csv_data[csv_data['close'] > 11.08]
+
+# (5) 将 date 设置为索引，并重新命名数据库为 df1，使用 df.loc[] 标签定位方式，
+# 选取 df1 数据库中 2017-12-11 至 2017-12-20 的所有数据
+df1 = csv_data.set_index('date')
+df2 = df1.loc['2017-12-11':'2017-12-20']
+
+# (6) 使用 df.loc[] 标签定位方式，选取 df1 数据库中 open 至 close 间的所有列
+index1 = [i for i in df1.columns].index('open')
+index2 = [i for i in df1.columns].index('close')
+df3 = df1.loc[:, [i for i in df1.columns][index1:index2+1]]
+
+# (7) 使用 df.loc[] 标签定位方式，选取 df1 数据库中时间从 2018-07-01 至 2018-07-08，open 至 close 间的所有列
+df4 = df1.loc['2018-07-01':'2018-07-08', [i for i in df1.columns][index1:index2+1]]
+
+
