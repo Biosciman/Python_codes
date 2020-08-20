@@ -24,4 +24,3 @@ dr = pd.date_range(start='2019-01-02', periods=100)
 data = np.random.randn(100).cumsum()
 close = data - np.min(data)
 df = pd.DataFrame({"close": close}, index=dr)
-
