@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Awesome-pyecharts</title>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+
+</head>
+<body>
+    <div id="120678be0c2a456ba97ee4b7d3d6290a" class="chart-container" style="width:750px; height:350px;"></div>
+    <script>
+        var chart_120678be0c2a456ba97ee4b7d3d6290a = echarts.init(
+            document.getElementById('120678be0c2a456ba97ee4b7d3d6290a'), 'white', {renderer: 'canvas'});
+        var option_120678be0c2a456ba97ee4b7d3d6290a = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "color": [
+        "#c23531",
+        "#2f4554",
+        "#61a0a8",
+        "#d48265",
+        "#749f83",
+        "#ca8622",
+        "#bda29a",
+        "#6e7074",
+        "#546570",
+        "#c4ccd3",
+        "#f05b72",
+        "#ef5b9c",
+        "#f47920",
+        "#905a3d",
+        "#fab27b",
+        "#2a5caa",
+        "#444693",
+        "#726930",
+        "#b2d235",
+        "#6d8346",
+        "#ac6767",
+        "#1d953f",
+        "#6950a1",
+        "#918597"
+    ],
+    "series": [
+        {
+            "type": "bar",
+            "name": "sales_num",
+            "data": [
+                800000.0,
+                650000.0,
+                450000.0,
+                300000.0,
+                300000.0,
+                200000.0,
+                150000.0,
+                100000.0,
+                100000.0,
+                100000.0
+            ],
+            "barCategoryGap": "20%",
+            "label": {
+                "show": true,
+                "position": "top",
+                "margin": 8
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "sales_num"
+            ],
+            "selected": {
+                "sales_num": true
+            },
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0
+    },
+    "xAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "axisLabel": {
+                "show": true,
+                "position": "top",
+                "rotate": -15,
+                "margin": 8
+            },
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            },
+            "data": [
+                "\u7a3b\u9999\u6751\u6708\u997c\u793c\u76d2\u88c5\u53cc\u86cb\u9ec4\u83b2\u84c9\u8001\u5f0f\u5e7f\u5f0f\u4e94\u4ec1\u8c46\u6c99\u591a\u53e3\u5473\u6563\u88c5\u4e2d\u79cb\u9001\u793c",
+                "\u534e\u7f8e\u6708\u997c\u793c\u76d2\u88c5\u5e7f\u5f0f\u53cc\u86cb\u9ec4\u83b2\u84c9\u6563\u88c5\u591a\u53e3\u5473\u4e2d\u79cb\u9001\u793c\u56e2\u8d2d\u5927\u793c\u5305810g",
+                "\u4e94\u82b3\u658b\u6708\u997c\u793c\u76d2\u88c5\u86cb\u9ec4\u83b2\u84c9\u8c46\u6c99\u6708\u997c\u591a\u53e3\u5473\u6563\u88c5\u56e2\u8d2d\u9001\u793c\u5e7f\u5f0f\u4e2d\u79cb\u8282",
+                "\u9c9c\u54c1\u5c4b\u6708\u997c\u793c\u76d2\u88c51020g\u5e7f\u5f0f\u4e94\u4ec1\u6d41\u5fc3\u86cb\u9ec4\u83b2\u84c9\u6563\u88c5\u591a\u53e3\u5473\u4e2d\u79cb\u9001\u793c",
+                "\u7a3b\u9999\u6751\u6708\u997c\u793c\u76d2\u5e7f\u5f0f\u86cb\u9ec4\u83b2\u84c9\u4e94\u4ec1\u8c46\u6c99\u591a\u53e3\u5473\u6563\u88c5\u4e2d\u79cb\u8282\u56e2\u8d2d\u9001\u793c\u54c1",
+                "\u8343\u76db\u6708\u997c\u793c\u76d2\u88c5\u86cb\u9ec4\u83b2\u84c9\u6708\u997c\u51b0\u76ae\u5e7f\u5f0f\u6708\u997c\u6563\u88c5\u591a\u53e3\u5473\u56e2\u8d2d\u4e2d\u79cb\u9001\u793c",
+                "\u7a3b\u9999\u6751\u6708\u997c\u793c\u76d2\u88c5\u5e7f\u5f0f\u4e2d\u79cb\u8282\u86cb\u9ec4\u83b2\u84c9\u8c46\u6c99\u4e94\u4ec1\u6563\u88c5\u591a\u53e3\u5473\u56e2\u8d2d\u9001\u793c",
+                "\u6708\u997c\u793c\u76d2\u88c5\u5e7f\u5f0f\u86cb\u9ec4\u83b2\u84c9\u96f6\u98df\u7cd5\u70b9\u4e94\u4ec1\u4e2d\u79cb\u8282\u5458\u5de5\u6279\u53d1\u56e2\u8d2d\u9001\u793c\u793c\u54c1",
+                "\u77e5\u5473\u89c2\u4e2d\u79cb\u6708\u997c\u793c\u76d2\u88c5\u6d41\u5fc3\u5976\u9ec4\u82cf\u5f0f\u6728\u7cd6\u9187\u9985\u5e7f\u5f0f\u86cb\u9ec4\u83b2\u84c9\u56e2\u8d2d\u9001\u793c",
+                "\u8343\u76db\u71d5\u7a9d\u6708\u997c\u793c\u76d2\u88c5\u5e7f\u5f0f\u86cb\u9ec4\u83b2\u84c9\u8c46\u6c99\u51b0\u76ae\u6708\u997c\u6563\u88c5\u591a\u53e3\u5473\u4e2d\u79cb\u9001\u793c"
+            ]
+        }
+    ],
+    "yAxis": [
+        {
+            "show": true,
+            "scale": false,
+            "nameLocation": "end",
+            "nameGap": 15,
+            "gridIndex": 0,
+            "inverse": false,
+            "offset": 0,
+            "splitNumber": 5,
+            "minInterval": 0,
+            "splitLine": {
+                "show": false,
+                "lineStyle": {
+                    "width": 1,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid"
+                }
+            }
+        }
+    ],
+    "title": [
+        {
+            "text": "\u6708\u997c\u5546\u54c1\u9500\u91cfTop10",
+            "padding": 5,
+            "itemGap": 10
+        }
+    ]
+};
+        chart_120678be0c2a456ba97ee4b7d3d6290a.setOption(option_120678be0c2a456ba97ee4b7d3d6290a);
+    </script>
+</body>
+</html>
