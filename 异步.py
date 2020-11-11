@@ -1,8 +1,6 @@
 import asyncio
 from pyppeteer import launch
 
-
-
 # # 异步基础
 # async def count():
 #     print('one')
@@ -19,7 +17,7 @@ from pyppeteer import launch
 async def main():
     browser = await launch()
     page = await browser.newPage()
-    await page.goto('http://www.baidu.com')
+    await page.goto('http://www.baidu.com/')
     await page.screenshot({'path': 'baidu.png'})
     dimensions = await page.evaluate('''() => {
             return {
