@@ -2,6 +2,7 @@ import asyncio
 from pyppeteer import launch
 
 
+
 # # 异步基础
 # async def count():
 #     print('one')
@@ -14,6 +15,7 @@ from pyppeteer import launch
 #
 # asyncio.run(main())
 
+# 百度截屏
 async def main():
     browser = await launch()
     page = await browser.newPage()
